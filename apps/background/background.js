@@ -21,7 +21,7 @@ var BgPageInstance = (function () {
 
     // 初始化 数据库
     let instanceDb = function () {
-        let request = window.indexedDB.open('zhihu', 1);
+        let request = self.indexedDB.open('zhihu', 1);
 
 
         request.onerror = function (event) {
